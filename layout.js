@@ -53,6 +53,7 @@ function headerHTML() {
           <ul>    
 			<li><a href="https://medium.com/@dovebite" target="_blank">medium</a></li>
             <li><a href="https://www.behance.net/doveofart" target="_blank">behance</a></li>
+			<li><a href="https://www.flickr.com/people/doveafk/" target="_blank">flickr</a></li>
             <li><a href="https://www.instagram.com/doveafk" target="_blank">instagram - photography</a></li>
 			<li><a href="https://www.instagram.com/mooneyedcat" target="_blank">instagram - cat</a></li>
 			<li><a href="https://www.pinterest.com/doveirl" target="_blank">pinterest</a></li>
