@@ -37,6 +37,7 @@ function headerHTML() {
           <ul>
 		  	<li><a href="./index.html">Take me home</a></li>
             <li><a href="/aboutme.html">About me</a></li>
+			<li><a href="/catroom.html">Catroom</a></li>
           </ul>
         </nav>       
 		<nav>

@@ -103,6 +103,40 @@ a:focus {
   background-color: hotpink
 }
 
+/* Marquees */
+.marquee {
+  --gap: 7px;
+  display: flex;
+  overflow: hidden;
+  gap: var(--gap);
+}
+
+.marquee-inner {
+  flex-shrink: 0;
+  display: block;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+  animation: scroll 50s linear infinite;
+}
+
+.marquee-reverse .marquee-inner {
+  animation-direction: reverse;
+}
+
+.marquee:hover .marquee-inner {
+  animation-play-state: paused;
+ }
+	
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
 /* layout */
 
 .layout {
