@@ -420,7 +420,8 @@ main h6 {
 /* COLUMNS: */
 
 .two-columns {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .two-columns > * {
@@ -510,17 +511,16 @@ main h6 {
 
 /* mobile */
 
-/* CSS Code for devices < 800px */
-@media (max-width: 800px) {
+/* CSS Code for mobile */
+@media (max-width: 768px) {
   body {
-    font-size: 14px;
+    font-size: 25px;
   }
 
   .layout {
     width: 100%;
     grid-template: "header" auto  "leftSidebar" auto "main" auto "footer" auto / 1fr;
   }
-
   
   .right-sidebar { 
     display: none;
@@ -551,6 +551,11 @@ main h6 {
     max-height: none;
     padding: 15px;
   }
+  
+
+  .two-columns {
+        display: block;
+    }
 
   .images {
     flex-wrap: wrap;

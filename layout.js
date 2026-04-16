@@ -52,17 +52,18 @@ function headerHTML() {
         <div class="sidebar-section">
           <div class="sidebar-title">Come find me</div>
           <ul>    
+			<li><a href="https://github.com/dovebite" target="_blank">github</a></li>
 			<li><a href="https://medium.com/@dovebite" target="_blank">medium</a></li>
             <li><a href="https://www.behance.net/doveofart" target="_blank">behance</a></li>
 			<li><a href="https://www.flickr.com/people/doveafk/" target="_blank">flickr</a></li>
             <li><a href="https://www.instagram.com/doveafk" target="_blank">instagram - photography</a></li>
 			<li><a href="https://www.instagram.com/mooneyedcat" target="_blank">instagram - cat</a></li>
-			<li><a href="https://www.instagram.com/doveinterrupted" target="_blank">instagram - meme</a></li>
 			<li><a href="https://www.pinterest.com/doveirl" target="_blank">pinterest</a></li>
 		</nav>
         
         <div class="sidebar-section">
           <img src="./image/meirl.gif" class="center">
+		  <img src="./image/bestview.gif" class="center">
 		  <p></p>
           <a href="https://ko-fi.com/dovebite" target="_blank"><img src="./image/kofi.gif" alt="my ko-fi link" class="center"></a>
 		</div>
