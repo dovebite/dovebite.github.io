@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--style-->
+
+<style>
+
+@font-face { 
+  font-family: 'rainyhearts';
+  src: 
+    url(./rainyhearts.woff2) format('woff2'),
+    url(./rainyhearts.woff) format('woff'),
+    url(./rainyhearts.ttf) format('truetype');
+	font-display: swap;
+	font-weight: 1 200;
+}
+
+@font-face { 
+  font-family: 'Sancreek';
+  src: 
+    url(./Sancreek.woff2) format('woff2'),
+    url(./Sancreek.woff) format('woff'),
+    url(./Sancreek.ttf) format('truetype');
+	font-display: swap;
+	font-weight: 1 200;
+}
+
+@font-face { 
+  font-family: 'rounds';
+  src: 
+    url(./rounds.woff2) format('woff2'),
+    url(./rounds.woff) format('woff'),
+    url(./rounds.ttf) format('truetype');
+	font-display: swap;
+	font-weight: 1 200;
+}
+
+body {
+	font-family: rainyhearts;
+	color: #330066;
+	font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: white;
+   text-shadow: 0 0 7px #ffffff, 0 0 11px #0000ff,
+				-4px 4px #ef3550,
+                -8px 8px #f48fb1,
+				-12px 12px #7e57c2;
+}
+
+h2 {
+	font-family: Sancreek;
+}
+
+h3 {
+	color: white;
+	text-shadow: 0 0 7px #ff0000, 0 0 11px #0000ff;
+}
+
+.highlight {
+	background: #ff00e1;
+	background: linear-gradient(90deg,rgba(4, 235, 0, 1) 0%, rgba(5, 130, 255, 1) 28%, rgba(255, 20, 228, 1) 52%, rgba(255, 0, 0, 1) 75%, rgba(255, 149, 0, 1) 98%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.boxbg {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-image: url("./image/starry.gif");
+	background-repeat: repeat; 
+	padding: 10px;	
+	font-family: Sancreek;
+	font-size: 120%;
+	}
+	
+.staticimage{
+  position: absolute;
+  right: 2px;
+}	
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-image: url("./image/hearts.gif");
+  font-family: rounds;
+  font-size: 22px;
+}
+
+ul.menu li {float: left;}
+
+ul.menu li a {
+  display: block;
+  color: #9900ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.menu li a:hover:not(.active) {background-color: #cc00ff20;}
+
+ul.menu li a.active {background-color: #cc00ff50;}
+
+ul.menu li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.menu li.right, 
+  ul.menu li {float: none;}
+  
+h2 {
+	text-align: center; 
+ 
+img {
+  width: 100%;
+  height: auto;
+}
+
+}
+</style>
+ 
+<!--the meat-->
+
+</head>
+<body>
+
+<div class="boxbg">
+  <h1>Balloon Menu</h1>
+  <h3>Please select a category!</h3>
+  </div>
+</div>
+
+<ul class="menu">
+  <li><a class="active" href="#Animals">Animals</a></li>
+  <li><a href="#Hats">Hats</a></li>
+  <li><a href="#Swords">Swords</a></li>
+  <li><a href="#Etc">Everything Else</a></li>
+</ul>
+
+
+<div style="background-color:#9933ff50;text-align:center;padding:2px;margin-top:7px;font-size:12px;">
+	<p>Please note! All balloons are LATEX and are not safe for those with latex allergies! Latex is a biodegradable material.</p>
+</div>
+
+  <div id="Animals">
+    <h2><span class="highlight">Animals</span></h2>
+    <p>Are non animal balloon animals even balloon animals?</p>
+    <p><img src="./image/dog.png"></p>
+	<p><img src="./image/cat.png"></p>
+	<p><img src="./image/boycat.png"></p>
+	<p><img src="./image/mouse.png"></p>
+	<p><img src="./image/turtle.png"></p>
+	<p><img src="./image/turtlebracelet.png"></p>
+	<p><img src="./image/monkey.png"></p>
+	<p><img src="./image/plusbanana.png"></p>
+	<p><img src="./image/worm.png"></p>
+  </div>
+  
+  <div id="Hats">
+    <h2><span class="highlight">Hats</span></h2>
+    <p>Balloons you can wear on your head!</p>
+    <p><img src="./image/flowerhat.png"></p>
+	<p><img src="./image/hearthat.png"></p>
+	<p><img src="./image/monkeyhat.png"></p>
+	<p><img src="./image/theentirejunglehat.png"></p>
+  </div>
+  
+   <div id="Swords">
+    <h2><span class="highlight">Swords</span></h2>
+    <p>Balloons you can wield. The word sword is up for interpretation.</p>
+    <p><img src="./image/sword.png"></p>
+	<p><img src="./image/fencingsword.png"></p>
+	<p><img src="./image/flowersword.png"></p>
+	<p><img src="./image/heartsword.png"></p>
+  </div>
+  
+   <div id="Etc">
+    <h2><span class="highlight">Everything Else</span></h2>
+    <p>What else exists in the world besides animals, hats and swords? Not much!</p>
+    <p>Coming soon!</p>
+  </div>
+
+</div>
+
+
+<img src="./image/juggle.gif" class="staticimage">
+
+<div style="background-color:#9933ff50;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
+	<p>Jack of all trades, master of some. <a href="https://dovebite.github.io">See what else I do!</a></p>
+	<p><a href="https://ko-fi.com/dovebite">Tips appreciated</a>, never required.</p>
+</div>
+
+</body>
+</html>
